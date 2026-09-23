@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Generated CEF downloads and application bundles
+.cef/
+.cef-staging/
+.cef-staging-final/
+dist/
+
+# Xcode and profiling output
+DerivedData/
+*.dSYM/
+*.profdata
+*.profraw
+*.xcuserstate
+xcuserdata/
+
+# Local environment and signing credentials
+.env
+.env.*
+!.env.example
+*.cer
+*.p12
+*.mobileprovision
+*.provisionprofile
