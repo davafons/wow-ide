@@ -2,6 +2,10 @@
 
 The internal macOS bundle uses CefSwift 0.1.0, Chromium Embedded Framework, Termini (pinned at ecfa07ada2eaca872c59c4517f9cf929090fbd53), and GhosttyKit 0.1.6. CefSwift and Termini source are vendored under `Vendor/`. GhosttyKit is downloaded by SwiftPM as a checksum-pinned static library. Termini has local focus-policy patches to keep the overlay nonactivating. These notices are copied into the app bundle by the packaging script.
 
+## World of Warcraft icon
+
+The application icon incorporates the World of Warcraft application icon for product identification. World of Warcraft and the associated icon artwork are trademarks and copyright of Blizzard Entertainment. That artwork is not licensed under WoW IDE's MIT License. WoW IDE is not affiliated with or endorsed by Blizzard Entertainment.
+
 ## Termini — MIT License
 
 MIT License

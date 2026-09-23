@@ -3,6 +3,7 @@ set -eu
 
 project_dir=$(CDPATH='' cd -- "$(dirname -- "$0")/.." && pwd)
 source_svg="$project_dir/Resources/AppIcon.svg"
+preview_png="$project_dir/Resources/AppIcon.png"
 work_dir=$(mktemp -d "${TMPDIR:-/tmp}/wow-ide-icon.XXXXXX")
 iconset="$work_dir/AppIcon.iconset"
 trap 'rm -rf "$work_dir"' EXIT INT TERM
@@ -27,6 +28,7 @@ render 256 "$iconset/icon_256x256.png"
 render 512 "$iconset/icon_256x256@2x.png"
 render 512 "$iconset/icon_512x512.png"
 render 1024 "$iconset/icon_512x512@2x.png"
+render 1024 "$preview_png"
 
 iconutil -c icns "$iconset" -o "$project_dir/Resources/AppIcon.icns"
 echo "$project_dir/Resources/AppIcon.icns"

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Resources/AppIcon.svg" alt="WoW IDE" width="128">
+  <img src="Resources/AppIcon.png" alt="WoW IDE" width="128">
 </p>
 
 <h1 align="center">WoW IDE</h1>
@@ -22,6 +22,10 @@
 - A Codex app-server client with resumable threads, streaming output, interruption, and explicit approvals
 - Saved panel layouts, independent minimize controls, global shortcuts, and optional launch at login
 - Passive window behavior designed to avoid taking game input until a text surface is clicked
+
+| WoW IDE in game |
+| --- |
+| ![WoW IDE showing its Chromium browser with docked DevTools and Ghostty terminal over World of Warcraft](assets/wow-ide-in-game.png) |
 
 ## Requirements
 
@@ -103,3 +107,4 @@ Browser data stays in a dedicated CEF profile. Codex uses the locally installed 
 WoW IDE is available under the [MIT License](LICENSE). Third-party components retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.md).
 
 “WoW IDE” is a working title. WoW is the first target profile, not a required integration.
+World of Warcraft and its icon are trademarks and artwork of Blizzard Entertainment; the icon artwork is used for identification and is not covered by this repository's MIT License.
